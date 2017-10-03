@@ -1,0 +1,66 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: 20-Dez-2016 às 01:06
+-- Versão do servidor: 5.7.11
+-- PHP Version: 5.6.19
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_vendedor`
+--
+
+CREATE TABLE `tb_vendedor` (
+  `Id_Vend` int(10) UNSIGNED NOT NULL,
+  `Email_Vend` varchar(40) DEFAULT NULL,
+  `Nome_Vend` varchar(20) NOT NULL,
+  `Sobrenome_Vend` varchar(20) NOT NULL,
+  `Cep_Vend` varchar(9) NOT NULL,
+  `Rua_Vend` varchar(40) NOT NULL,
+  `Bairro_Vend` varchar(40) DEFAULT NULL,
+  `Cidade_Vend` varchar(20) NOT NULL,
+  `Estado_Vend` varchar(2) NOT NULL,
+  `Numero_Vend` varchar(4) DEFAULT NULL,
+  `Cpf_Vend` varchar(20) NOT NULL,
+  `Telefone_Vend` varchar(20) NOT NULL,
+  `Celular_Vend` varchar(20) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tb_vendedor`
+--
+ALTER TABLE `tb_vendedor`
+  ADD PRIMARY KEY (`Id_Vend`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tb_vendedor`
+--
+ALTER TABLE `tb_vendedor`
+  MODIFY `Id_Vend` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
